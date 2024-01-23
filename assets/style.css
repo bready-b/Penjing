@@ -1,0 +1,349 @@
+:root {
+    --primary-color: #08b08e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefefe;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+#header h2 {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+}
+
+#header__text {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+}
+
+#header__text span {
+    cursor: pointer;
+}
+
+#header__btns button {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#header__btns .btn-login {
+    border: 1.5px solid var(--primary-color);
+    padding: 0.5rem 1.3rem;
+    color: var(--primary-color);
+}
+
+#header__btns .btn-startFree {
+    border: none;
+    margin-left: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.col {
+    width: 30%;
+}
+
+/* .col-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    padding: 8px;
+    box-sizing: border-box;
+} */
+
+.col-pricing {
+    display: flex;
+    justify-content: center;
+    width: 41%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.col-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 8px;
+}
+
+.price-box {
+    background: white;
+    color: #555;
+    list-style: none;
+    border: 1px solid #555;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.price-box:hover,
+.price-box.best {
+    box-shadow: 0 10px 15px 0 #000;
+}
+
+.price-box .header {
+    background-color: #111;
+    color: #fff;
+    font-size: 25px;
+}
+
+.price-box .header.header-green {
+    background: #4caf50;
+}
+
+/* Align price boxes */
+.price-box li {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    color: var(--primary-color);
+}
+
+.price-box .emph {
+    background-color: #f4f4f4;
+    font-size: 20px;
+    text-align: center;
+}
+
+.price-box .emph-price {
+    background-color: #f4f4f4;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.price-box .emph-price strong {
+    background-color: #f4f4f4;
+    font-size: 50px;
+}
+
+#price-box--new {
+    padding: 0.2rem;
+    background-color: gold;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.button {
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 15px 7rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* add-on boxes */
+#section__container h2 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-weight: 200;
+}
+
+.section__container-box1--wrap {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0.7rem 0;
+}
+
+.section__container-box1 {
+    display: flex;
+    justify-content: space-between;
+    width: 73%;
+    border: 1px solid #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.8rem;
+}
+
+.section__container-box1--inner-left {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section__container-box1--inner-left p {
+    color: #7b7979;
+    margin-bottom: 0.5rem;
+}
+
+.section__container-box1--inner-left h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.section__container-box1--inner-left a {
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section__container-box1--inner-right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+    flex-direction: column;
+}
+
+.section__container-box1--inner-right span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* Sign up box */
+.section__container-signup {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 6rem 0;
+}
+
+.section__container-signup--box1 {
+    display: flex;
+    justify-content: space-between;
+    width: 73%;
+    padding: 6rem;
+    border: 1px solid #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #f2fafe;
+}
+
+.section__container--signup-box1-left {
+    line-height: 1.5;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #6c6a6a;
+}
+
+.section__container--signup-box1-left strong {
+    color: var(--primary-color);
+}
+
+.section__container--signup-box1-left h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.section__container--signup-box1-right {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__container--signup-box1-right span {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+/* Question lists */
+.question__header {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 100;
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.question__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.question__ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+}
+
+.question__ul-list {
+    list-style-type: none;
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    display: flex;
+    color: var(--primary-color);
+}
+
+.question__ul-list i {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+/* Footer */
+
+.col__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    line-height: 2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.col__container h2 {
+    color: #525252;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.col__container p {
+    color: var(--primary-color);
+}
+
+.col__container #col__1-pricing {
+    margin-top: 3rem;
+}
+
+.col__container #col__2-header {
+    margin-top: 1rem;
+}
